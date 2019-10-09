@@ -101,7 +101,7 @@ alias zshedit='s ~/.zshrc'
 # aliases for activating envs
 alias venv_sandbox='source ~/.venvs/sandbox/bin/activate'
 
-
+# function for seeing git stats
 function gday () {
 	git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 }
