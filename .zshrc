@@ -100,6 +100,16 @@ alias zshedit='s ~/.zshrc'
 
 # aliases for activating envs
 alias venv_sandbox='source ~/.venvs/sandbox/bin/activate'
+alias v='source .venv/bin/activate'
+
+# git aliases
+alias gdiff='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
+alias m='git checkout master'
+alias sm='git_branch=`git branch --show-current`; m; p; git checkout $git_branch; mm'
+alias mm='git merge master'
+alias p='git pull'
+alias cr='git commit -am "cr" --no-verify; git push'
+
 
 # function for seeing git stats
 function gday () {
