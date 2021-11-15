@@ -109,6 +109,7 @@ alias sm='git_branch=`git branch --show-current`; m; p; git checkout $git_branch
 alias mm='git merge master'
 alias p='git pull'
 alias cr='git commit -am "cr" --no-verify; git push'
+crd() { git commit -am "$*"; gdiff }
 
 
 # function for seeing git stats
